@@ -41,6 +41,8 @@
             android:background="@drawable/input_style"
             android:hint="Enter username"
             android:paddingLeft="20dp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text1"
@@ -51,8 +53,10 @@
             android:layout_height="50dp"
             android:layout_marginTop="35dp"
             android:background="@drawable/input_style"
-            android:hint="Enter passowrd"
+            android:hint="Enter password"
             android:inputType="textPassword"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
             android:drawableRight="@drawable/ic_baseline_visibility_24"
             android:paddingRight="20dp"
             android:paddingLeft="20dp"
@@ -62,19 +66,33 @@
             app:layout_constraintTop_toBottomOf="@+id/logtxt"
             />
         <Button
+            android:id="@+id/passwordVisibilityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Password"
+            android:textSize="14sp"
+            android:textColor="@color/teal_200"
+            app:layout_constraintTop_toBottomOf="@+id/ed3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
             android:id="@+id/btnlogin"
             android:layout_width="320dp"
             android:layout_height="60dp"
+            android:layout_marginTop="64dp"
+            android:backgroundTint="@color/teal_200"
             android:gravity="center"
-            android:text="login"
+            android:text="Login"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginTop="35dp"
-            android:backgroundTint="@color/teal_200"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ed3"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/ed3" />
+
         <LinearLayout
             android:id="@+id/lin2"
             android:layout_width="match_parent"
@@ -99,7 +117,7 @@
                 android:id="@+id/regis_link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Click here"
+                android:text="Sign Up"
                 android:textStyle="bold"
                 android:textColor="@color/teal_200"
                 android:textSize="16dp"
